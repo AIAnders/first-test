@@ -1,0 +1,25 @@
+
+{% extends 'accounts/base.html' %}
+
+
+{% block login %}
+
+<head>
+    <title>login</title>
+</head>
+<body>
+    {% if form.errors %}
+        <p class="text-warning">Username or password incorrect.</p>
+    {% endif %}
+
+    <form role="form" class="form-horizontal" method="post"
+          action="{% url 'django.contrib.auth.views.login' %}">
+        {% csrf_token %}
+        {{ form }}
+        <input class ="btn btn-primary" type="submit" value="Login" />
+        <input type = "hidden" name="next" value="{{ next }}" />
+    </form>
+</body>
+</html>
+
+{% endblock %}

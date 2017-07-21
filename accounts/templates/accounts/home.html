@@ -1,0 +1,15 @@
+{% extends 'accounts/base.html' %}
+
+{% block title}
+Overview for {{user.username}}
+{% endblock title}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/site_media/css/style.css">
+<div class="jumbotron">
+    <h1 class="tab">Welcome {{ user.username }}</h1>
+    {% include "tictactoe/game_list_snippet.html" with header="Games waiting for your move" games_list=waiting_games %}
+    {% include "tictactoe/game_list_snippet.html" with header="Other active games" games_list=other_games %}
+    {% include "tictactoe/game_list_snippet.html" with header="Finished games" %}
+</div>
+{% endblock content%}
