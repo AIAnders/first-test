@@ -24,7 +24,7 @@ SECRET_KEY = ')gu)%#7a7yo847o$19tswc5f+ph()9)&gnl6^1)pb8izeixs@p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS  = ['AIAnders.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'boardgames.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'AIAnders$default',
-        'USER': 'AIAnders',
-        'PASSWORD': 'vfr750password',
-        'HOST': 'AIAnders.mysql.pythonanywhere-services.com',
-
+        'NAME': 'myproject',
+        'USER': 'ally',
+        'PASSWORD': 'pass',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -112,3 +112,5 @@ TEMPLATE_DIRS = (os.path.join(BASE_DIR, "templates"),)
 LOGIN_URL = 'boardgames_login'
 LOGOUT_URL = 'boardgames_logout'
 LOGIN_REDIRECT_URL = 'boardgames_home'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
