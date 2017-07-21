@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'boardgames.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '<AIAnders>$<default>',
-        'USER': '<AIAnders>',
-        'PASSWORD': '<vfr750password>',
-        'HOST': '<AIAnders.mysql.pythonanywhere-services.com>',
+        'NAME': 'AIAnders>$<default',
+        'USER': 'AIAnders',
+        'PASSWORD': 'vfr750password',
+        'HOST': 'AIAnders.mysql.pythonanywhere-services.com',
 
     }
 }
