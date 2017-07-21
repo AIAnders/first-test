@@ -24,7 +24,7 @@ SECRET_KEY = ')gu)%#7a7yo847o$19tswc5f+ph()9)&gnl6^1)pb8izeixs@p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS  = ['<AIAnders>.pythonanywhere.com']
 
 
 # Application definition
@@ -81,6 +81,7 @@ DATABASES = {
         'USER': '<AIAnders>',
         'PASSWORD': '<vfr750password>',
         'HOST': '<AIAnders.mysql.pythonanywhere-services.com>',
+
     }
 }
 
